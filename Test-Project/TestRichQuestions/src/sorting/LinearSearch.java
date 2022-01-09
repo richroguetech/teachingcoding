@@ -1,4 +1,4 @@
-package sorting;// A Sample Java program for beginners with Competitive Programming
+package sorting;
 
 public class LinearSearch
 {

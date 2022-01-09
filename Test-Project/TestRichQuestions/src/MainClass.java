@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import sorting.*;
-
+import strings.*;
 
 public class MainClass {
 
@@ -14,8 +14,14 @@ public class MainClass {
         System.out.println("result is "+ result);
     }
 
+    public static void stringquestions() {
+        StringQuestions sq = new StringQuestions();
+        System.out.println(sq.LC_9_isPalindrome(939));
+    }
+
     public static void main(String arg[])
     {
         linearSearch();
+        stringquestions();
     }
 }

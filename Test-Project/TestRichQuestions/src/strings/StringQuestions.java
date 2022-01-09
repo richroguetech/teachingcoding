@@ -3,8 +3,23 @@ package strings;
 import java.io.PrintWriter;
 import java.util.*;
 
-public class Sample1
+public class StringQuestions
 {
+	public boolean LC_9_isPalindrome(int x) {
+
+		String s = new String(x+"");
+		char [] ss = s.toCharArray();
+		int length = ss.length;
+		int mid = ss.length/2;
+
+		for (int i =0; i < mid; i++) {
+			if (ss[i] != ss[length-i-1]) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	static List<String> convertBoardToString(int[] board) {
 
 		List<String> boardString = new ArrayList<>();
@@ -77,11 +92,4 @@ public class Sample1
 		}
 		return array;
 	}
-//
-//
-//	public static void main(String [] args)
-//	{
-//        find_all_arrangements(1);
-//		System.out.println("finished");
-//	}
 }
